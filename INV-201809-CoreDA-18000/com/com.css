@@ -1,0 +1,121 @@
+﻿/*Reset*/
+body, dd, div, figure, ul, dl, h1, h2, p, input, textarea {
+    margin: 0;
+}
+
+ul, th, td, input, textarea {
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+select, input, select textarea {
+    outline-width: 0;
+    border-width: 0;
+    background: none;
+}
+
+textarea {
+    overflow-y: auto;
+    resize: none;
+}
+
+h1, h2, caption, th, td, li, dt, dd, p, span, i, b, a, input, select, textarea {
+    color: inherit;
+    font: inherit;
+}
+
+input, select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+th {
+    font-weight: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+i, b {
+    font-style: normal;
+}
+
+img {
+    height: auto;
+}
+
+sup {
+    font-size: 50%;
+    line-height: 0;
+    vertical-align: 1em;
+}
+
+/*common*/
+.wrap_index {
+    position: relative;
+    width: 1024px;
+    height: 768px;
+    background-image: url("bg.jpg");
+    background-size: cover;
+    font-family: microsoft yahei, "微软雅黑", serif;
+    letter-spacing: 1px;
+}
+
+.run_box {
+    position: absolute;
+    top: 270px;
+    left: 5px;
+}
+
+.run_box img {
+    width: 180px;
+    height: auto;
+}
+
+.switch_box {
+    position: absolute;
+    left: 75px;
+    bottom: 125px;
+    display: flex;
+    justify-content: space-between;
+    width: 720px;
+}
+
+.switch_box li a {
+    overflow: hidden;
+    margin: 0 auto;
+    display: block;
+    width: 57px;
+    height: 31px;
+    background: url("switch.png") no-repeat left top;
+    color: transparent;
+}
+
+.switch_box li.able a {
+    background-position: left center;
+}
+
+.switch_box li.able.cur a {
+    background-position: left bottom;
+}
+
+.switch_box li span {
+    display: block;
+    margin-top: 5px;
+    font-size: 15px;
+    color: #b5b5b5;
+    text-align: center;
+}
+
+.switch_box li.able.cur span {
+    color: #93d1ce;
+}

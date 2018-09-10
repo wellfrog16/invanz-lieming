@@ -16,6 +16,7 @@ body {
     background-image: url("bg.jpg");
     color: #099;
     letter-spacing: 1px;
+    position: relative;
 }
 
 .container {

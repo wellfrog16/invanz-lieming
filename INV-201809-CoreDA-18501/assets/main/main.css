@@ -1,0 +1,23 @@
+.box .main {
+    text-align: center;
+    position: relative;
+    top: -5px;
+    left: 80px;
+}
+
+.box .title {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 300px;
+    display: flex;
+    justify-content: start;
+    z-index: 1;
+}
+
+.box .title span {
+    margin-left: 20px;
+    margin-top: 3px;
+    color: #231815;
+    font-size: 20px;
+}

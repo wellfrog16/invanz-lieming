@@ -9,7 +9,8 @@
             run_box.animate({
                 left: switch_item.index() * 129 + 5 + "px"
             }, 500 + switch_item.index() * 500, function () {
-                window.location.href = switch_btn.text();
+                // window.location.href = switch_btn.text();
+                // document.location = veeva:
             }).find("img").attr("src", "com/running.gif");
         }
     });

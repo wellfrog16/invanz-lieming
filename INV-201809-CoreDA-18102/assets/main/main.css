@@ -1,0 +1,209 @@
+/* 切换按钮 */
+.buttons {
+    list-style: none;
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    margin: 0;
+    padding: 0;
+    z-index: 5;
+}
+
+.buttons li {
+    width: 136px;
+    height: 56px;
+    background-image: url('button.png');
+    background-position-y: -56px;
+    text-align: center;
+    color: #121212;
+    line-height: 56px;
+    margin: 9px 0;
+}
+
+.buttons li.active {
+    background-position-y: 0;
+}
+
+
+/* 显微镜 */
+.microscope {
+    width: 202px;
+    height: 373px;
+    text-align: center;
+    position: absolute;
+    top: 20px;
+    left: 295px;
+}
+
+/* 镜片 */
+.items {
+    list-style: none;
+    position: absolute;
+    z-index: 5;
+    right: 32px;
+    top: 0;
+    margin: 0;
+}
+
+.items li {
+    width: 213px;
+    height: 66px;
+    margin-bottom: 60px;
+    /* position: absolute;
+    right: 32px;
+    z-index: 6; */
+}
+
+.items li.empty {
+    background-image: url('border.png');
+}
+
+.type-a {
+    display: block;
+}
+
+.type-a-1 {
+    margin-top: 40px;
+}
+
+.type-b {
+    display: none;
+}
+
+.type-b-1 {
+    margin-top: 100px;
+}
+
+.item1 {
+    top: 40px;
+}
+
+.item2 {
+    top: 166px;
+}
+
+.item3 {
+    top: 292px;
+}
+
+.item4 {
+    top: 100px;
+}
+
+.item5 {
+    top: 226px;
+}
+
+.items .text {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.items .text span {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -30px;
+    font-size: 18px;
+    color: #035f54;
+    text-shadow:1px 1px 1px #8ca4a0;
+}
+
+.small-box {
+    position: absolute;
+    width: 213px;
+    height: 66px;
+    /* top: 0; */
+    right: 0;
+    z-index: 5;
+}
+
+.lens {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-image: url('lens.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.photo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    text-align: center;
+}
+
+.photo img {
+    margin-top: 3%;
+    /* width: 45px;
+    height: 45px; */
+    height: 80%;
+    position: relative;
+}
+
+/* 文本 */
+.texts {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 280px;
+    top: 283px;
+    left: 284px;
+}
+
+.texts li {
+    display: none;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.texts li p {
+    margin: 0;
+    width: 120px;
+    font-size: 14px;
+    color: #12a4a1;
+    padding-left: 20px;
+}
+
+.texts li span {
+    position: absolute;
+    border: 1px solid #e8a23d;
+    width: 68px;
+    height: 23px;
+    bottom: -38px;
+    left: 106px;
+    text-align: center;
+    color: #e8a23d;
+    font-size: 12px;
+    line-height: 23px;
+    border-radius: 2px;
+}
+
+.texts li.active {
+    display: flex;
+}
+
+.texts li.line {
+    background-image: url('dash.png');
+    background-repeat: no-repeat;
+    background-position: center 5px;
+}
+
+.texts li.normal {
+    text-align: center;
+}
+
+.texts li.normal div {
+    width: 100%;
+    display: block;
+}

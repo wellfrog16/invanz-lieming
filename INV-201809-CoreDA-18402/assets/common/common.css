@@ -131,7 +131,7 @@ h1 span{
     margin: 0 auto;
     padding: 5px 0;
     font-size: 12px;
-    color: #8f8f8f;
+    color: #12a4a1;
     box-sizing: border-box;
 }
 
@@ -162,6 +162,33 @@ h1 span{
     border: solid 2px #099;
     border-radius: 10px;
     box-shadow: 0 0 7px rgba(0, 97, 97, .75) inset;
+}
+
+/* 翻页 */
+
+.tabs_prev, .tabs_next {
+    position: absolute;
+    top: 350px;
+    display: block;
+    width: 30px;
+    height: 60px;
+    background-image: url('icon-arrow.png');
+    background-size: cover;
+    opacity: 0;
+    transition: opacity .5s linear;
+}
+
+.tabs_prev.cur, .tabs_next.cur {
+    opacity: 1;
+}
+
+.tabs_prev {
+    transform: rotate(180deg);
+    left: 10px;
+}
+
+.tabs_next {
+    right: 10px;
 }
 
 /* 待整理 */

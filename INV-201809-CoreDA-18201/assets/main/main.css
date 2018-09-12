@@ -9,69 +9,155 @@ h3 {
 }
 
  
-.wrapper1 {
-    width: 100px; /* Set the size of the progress bar */
-    height: 100px;
-    position: absolute; /* Enable clipping */
-    clip: rect(0px, 100px, 100px, 50px); /* Hide half of the progress bar */
-  }
-  /* Set the sizes of the elements that make up the progress bar */
-  .circle {
-    width: 80px;
-    height: 80px;
-    border: 10px solid green;
-    border-radius: 50px;
-    position: absolute;
-    clip: rect(0px, 50px, 100px, 0px);
-  }
-  
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 320px;
+}
 
-  /* Using the data attributes for the animation selectors. */
-/* Base settings for all animated elements */
-div[data-anim~=base] {
-    -webkit-animation-iteration-count: 1;  /* Only run once */
-    -webkit-animation-fill-mode: forwards; /* Hold the last keyframe */
-    -webkit-animation-timing-function:linear; /* Linear animation */
-  }
-   
-  .wrapper1[data-anim~=wrapper1] {
-    -webkit-animation-duration: 0.01s; /* Complete keyframes asap */
-    -webkit-animation-delay: 3s; /* Wait half of the animation */
-    -webkit-animation-name: close-wrapper; /* Keyframes name */
-  }
-   
-  .circle[data-anim~=left] {
-    -webkit-animation-duration: 6s; /* Full animation time */
-    -webkit-animation-name: left-spin;
-  }
-   
-  .circle[data-anim~=right] {
-    -webkit-animation-duration: 3s; /* Half animation time */
-    -webkit-animation-name: right-spin;
-  }
-  
-  
-/* Rotate the right side of the progress bar from 0 to 180 degrees */
-@-webkit-keyframes right-spin {
-  from {
-    -webkit-transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(180deg);
-  }
+.small-box {
+    width: 230px;
+    height: 230px;
+    margin: 0 68px;
+    position: relative;
+    
 }
-/* Rotate the left side of the progress bar from 0 to 360 degrees */
-@-webkit-keyframes left-spin {
-  from {
-    -webkit-transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-  }
+
+.circle1 {
+    width: 230px;
+    height: 230px;
+    border-radius: 230px;
+    border: 2px solid #c7c7c7;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
-/* Set the wrapper clip to auto, effectively removing the clip */
-@-webkit-keyframes close-wrapper {
-  to {
-    clip: rect(auto, auto, auto, auto);
-  }
+
+.circle2 {
+    width: 196px;
+    height: 196px;
+    border-radius: 196px;
+    border: 40px solid #e6e7e8;
+    box-sizing: border-box;
+    position: absolute;
+    top: 17px;
+    left: 17px;
+    padding-top: 30px;
+}
+
+.circle2 span {
+    display: block;
+    text-align: center;
+}
+
+.circle2 span.s1 {
+    color: #f0aa57;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+
+.circle3 {
+    width: 196px;
+    height: 196px;
+    border-radius: 196px;
+    border: 40px solid #57c2a2;
+    box-sizing: border-box;
+    position: absolute;
+    top: 17px;
+    left: 17px;
+    clip: rect(98px, 196px, 196px, 0px);
+    z-index: 2;
+}
+
+.circle4 {
+    width: 196px;
+    height: 196px;
+    border-radius: 196px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 17px;
+    left: 17px;
+    clip: rect(98px, 196px, 196px, 0px);
+    z-index: 2;
+}
+
+.line {
+    position: absolute;
+    left: 135px;
+    top: -14px;
+    display: none;
+}
+
+.data {
+    position: absolute;
+    left: 230px;
+    top: -27px;
+    display: none;
+}
+
+.data span {
+    display: block;
+    text-align: center;
+}
+
+.data .s3 {
+    font-size: 28px;
+}
+
+.text {
+    position: absolute;
+    width: 230px;
+    left: 0;
+    bottom: -45px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.item1 {
+    color: #57c2a2;
+}
+
+.item2 {
+    color: #56c1b5;
+}
+
+.item1 .circle3, .item1 .circle4 {
+    border: 40px solid #57c2a2;
+}
+
+.item2 .circle3, .item2 .circle4 {
+    border: 40px solid #56c1b5;
+}
+
+.circle4a {
+    animation: kf-circle1 1000ms linear;
+    animation-fill-mode: forwards;
+}
+
+.circle4b {
+    animation: kf-circle2 800ms linear;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes kf-circle1 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-150deg);
+    }
+}
+
+@keyframes kf-circle2 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-111deg);
+    }
 }

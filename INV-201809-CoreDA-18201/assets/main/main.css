@@ -143,6 +143,11 @@ h3 {
     animation-fill-mode: forwards;
 }
 
+.info {
+    position: absolute;
+    color: #000;
+}
+
 
 @keyframes kf-circle1 {
     from {

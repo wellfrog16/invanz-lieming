@@ -9,7 +9,8 @@ $(function() {
     });
 
     //
-    $("#g1").jFlip(300,300,{background:"grey",cornersTop:false}).
+    // $("#g1").jFlip(293, 255, {background:"grey",cornersTop:false}).
+    $("#g1").jFlip(293, 255, { background: 'white', cornersTop:false, gradientColors:['#868686','#ccc','#c2c2c2'], curlSize: 0.2}).
     bind("flip.jflip",function(event,index,total){
         // $("#l1").html("Image "+(index+1)+" of "+total);
     });

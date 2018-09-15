@@ -1,0 +1,105 @@
+.tips ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.tips li {
+    position: relative;
+    line-height: 16px;
+}
+
+.tips li img {
+    position: absolute;
+    left: -20px;
+    top: 7px;
+}
+
+.section {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.section2 {
+    display: none;
+}
+
+.bg {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.bg div {
+    margin: 0 50px;
+    display: flex;
+    align-items: center;
+}
+
+.bg .arrow {
+    opacity: 0.2;
+}
+
+.older {
+    position: absolute;
+    width: 165px;
+    height: 181px;
+    background-image: url('./older.png');
+    background-repeat: no-repeat;
+    top: 115px;
+    left: 200px;
+}
+
+.sub-box {
+    width: 100%;
+    height: 100%;
+}
+
+.bag {
+    width: 17px;
+    /* height: 12px; */
+    height: 0;
+    position: absolute;
+    background-image: url('./bag.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top;
+    top: 17px;
+    left: 33px;
+}
+
+.persons {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.persons li {
+    margin: 0 35px;
+    position: relative;
+    width: 110px;
+    text-align: center;
+    opacity: 0;
+}
+
+.persons li span {
+    position: absolute;
+    width: 120px;
+    height: 40px;
+    left: 0;
+    bottom: -40px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.right3 {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 30px;
+    display: none;
+}

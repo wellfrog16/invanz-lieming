@@ -1,0 +1,218 @@
+.box {
+    height: 430px;
+}
+
+.tips {
+    height: 10px;
+}
+
+.roulette {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.section {
+    display: flex;
+    height: 430px;
+    width: 800px;
+    left: 100px;
+    position: absolute;
+    z-index: 10;
+}
+
+.section1 {
+    width: 140px;
+    height: 430px;
+    /* border: 2px solid greenyellow; */
+    transform: rotate(-30deg);
+    position: absolute;
+    top: 20px;
+    left: 2px;
+}
+
+.section2 {
+    width: 140px;
+    height: 360px;
+    /* border: 2px solid greenyellow; */
+    transform: rotate(-10deg);
+    position: absolute;
+    top: 13px;
+    left: 194px;
+}
+
+.section3 {
+    width: 140px;
+    height: 360px;
+    /* border: 2px solid greenyellow; */
+    transform: rotate(10deg);
+    position: absolute;
+    top: 13px;
+    left: 394px;
+}
+
+.section4 {
+    width: 140px;
+    height: 380px;
+    /* border: 2px solid greenyellow; */
+    transform: rotate(30deg);
+    position: absolute;
+    top: 52px;
+    left: 587px;
+}
+
+
+
+/* .section > div {
+    width: 25%;
+    height: 100%;
+} */
+
+.items {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.items > div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.items img {
+    position: absolute;
+    z-index: 3;
+}
+
+/* ****************** */
+.item1 {
+}
+
+.item1 .person1 {
+    top: 140px;
+    left: 93px;
+}
+
+.item1 .person2 {
+    top: 136px;
+    left: 81px;
+    display: none;
+}
+
+.item1 .person3 {
+    top: 136px;
+    left: 81px;
+    display: none;
+}
+
+.item1 .s1 {
+    top: 261px;
+    left: 140px;
+    display: none;
+}
+
+.item1 .s2 {
+    top: 260px;
+    left: 144px;
+    display: none;
+}
+
+.item1 .bag {
+    top: 226px;
+    left: 144px;
+    display: none;
+}
+
+.item2 {
+
+}
+
+.item2 .person1 {
+    top: 52px;
+    left: 302px;
+}
+
+.item2 .person2 {
+    top: 53px;
+    left: 294px;
+    display: none;
+}
+
+.item2 .s1 {
+    top: 212px;
+    left: 266px;
+    display: none;
+}
+
+.item2 .s2 {
+    top: 212px;
+    left: 266px;
+    display: none;
+}
+
+.item2 .bag {
+    top: 136px;
+    left: 315px;
+    display: none;
+}
+
+.item3 {
+}
+
+.item3 .person1 {
+    top: 52px;
+    left: 539px;
+}
+
+.item3 .person2 {
+    top: 53px;
+    left: 533px;
+    display: none;
+}
+
+.item3 .s1 {
+    top: 213px;
+    left: 434px;
+    display: none;
+}
+
+.item3 .s2 {
+    top: 214px;
+    left: 463px;
+    display: none;
+}
+
+.item3 .bag {
+    top: 128px;
+    left: 525px;
+    display: none;
+}
+
+.item4 {
+}
+
+.item4 .person1 {
+    top: 126px;
+    left: 740px;
+}
+
+.item4 .person2 {
+    top: 125px;
+    left: 740px;
+    display: none;
+}
+
+.item4 .s1 {
+    top: 272px;
+    left: 558px;
+    display: none;
+}
+
+.item4 .bag {
+    top: 178px;
+    left: 725px;
+    display: none;
+}

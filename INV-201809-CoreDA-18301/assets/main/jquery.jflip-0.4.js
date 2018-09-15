@@ -126,7 +126,6 @@
         };
         return false;
       }).bind("mouseenter",function(e){
-        console.log(1122222);
         inCanvas = true;
         if(flipping) return;
         window.clearInterval(animationTimer);
@@ -150,6 +149,7 @@
           startDate = new Date().getTime();
           baseFlipX = mX;
           baseFlipY = mY;
+          // 动画
           animationTimer = window.setInterval(flip,10);
           index += sideLeft?-1:1;
           if(index<0) index = images.length-1;

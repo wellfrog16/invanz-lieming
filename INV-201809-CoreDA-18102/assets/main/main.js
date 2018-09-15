@@ -45,6 +45,7 @@ $(function() {
 
     function reset() {
         clearTimeout(timer);
+        $('.small-box img').stop();
         $('.small-box').stop();
         $('.small-box').removeAttr('style');
         $('.small-box img').removeAttr('style');

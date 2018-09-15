@@ -68,7 +68,20 @@ h3 {
     position: absolute;
     top: 17px;
     left: 17px;
-    clip: rect(98px, 196px, 196px, 0px);
+    clip: rect(0px, 196px, 98px, 0px);
+    z-index: 2;
+}
+
+.mask {
+    width: 196px;
+    height: 196px;
+    border-radius: 196px;
+    border: 41px solid #e6e7e8;
+    box-sizing: border-box;
+    position: absolute;
+    top: 17px;
+    left: 17px;
+    clip: rect(0px, 196px, 98px, 0px);
     z-index: 2;
 }
 
@@ -81,7 +94,8 @@ h3 {
     top: 17px;
     left: 17px;
     clip: rect(98px, 196px, 196px, 0px);
-    z-index: 2;
+    z-index: 3;
+    display: none;
 }
 
 .line {
@@ -143,9 +157,23 @@ h3 {
     animation-fill-mode: forwards;
 }
 
+.circle4c {
+    animation: kf-circle0 1200ms linear;
+    animation-fill-mode: forwards;
+}
+
 .info {
     position: absolute;
     color: #000;
+}
+
+@keyframes kf-circle0 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-180deg);
+    }
 }
 
 

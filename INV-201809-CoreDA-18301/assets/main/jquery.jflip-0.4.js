@@ -55,7 +55,7 @@
       }).get();
       var
         width = width,height = height,mX = width,mY = height,
-        basemX = mX*(1-curlSize), basemY = mY*curlSize,sideLeft = false,
+        basemX = mX*(1-curlSize), basemY = mY*curlSize,sideLeft = true,
         off = $.browser.msie?canvas.offset():null,
         onCorner = false,
         curlDuration=400,curling = false,
@@ -378,6 +378,10 @@
           }
         }   
       }
+
+      window.clearInterval(animationTimer);
+      startDate = new Date().getTime();
+      animationTimer = window.setInterval(cornerCurlIn,10);
     }
 
     $.fn.jFlip = function(width,height,opts){

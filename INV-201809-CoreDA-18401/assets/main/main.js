@@ -1,6 +1,8 @@
 $(function() {
     var flag = false;
-    var index = -1;
+    var index = 1;
+
+    s2('.item1');
 
     $('.section1').on('click', function() {
         if (flag || index === 1) { return; }

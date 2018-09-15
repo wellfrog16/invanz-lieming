@@ -27,4 +27,18 @@ $(function () {
             flag_btn = true;
         });
     });
+
+    let links = [
+        'veeva:gotoSlide(INV-201809-CoreDA-18101.zip);',
+        'veeva:gotoSlide(INV-201809-CoreDA-18201.zip);',
+        'veeva:gotoSlide(INV-201809-CoreDA-18301.zip);',
+        'veeva:gotoSlide(INV-201809-CoreDA-18401.zip);',
+        'veeva:gotoSlide(INV-201809-CoreDA-18501.zip);'
+    ];
+
+    $('.nav li a').each(function (index) {
+        $(this).on('click', function() {
+            document.location = links[index];
+        })
+    })
 });

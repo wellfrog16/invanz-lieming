@@ -79,6 +79,7 @@ $(function() {
         $('.item1 .person1').hide();
         $('.item1 .person2').hide();
         $('.item1 .person3').show();
+        $('.item1 .s1').hide();
         $('.item1 .s2').show();
     }
 });

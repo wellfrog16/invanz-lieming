@@ -7,9 +7,20 @@ $(function() {
             tab.hide().eq(index).show();
 
             if (index === 0) {
-                $('.tip p').hide();
+                $('.tips p').hide();
+                $('.tips span').hide();
+            }
+
+            if (index === 1) {
+                $('.tips p').hide();
+                $('.tips span').show();
             }
         })
+    });
+
+    $('.tips span').on('click', function () {
+        $('.tips span').hide();
+        $('.tips p').show();
     });
 
     setTimeout(function() {

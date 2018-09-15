@@ -1,18 +1,18 @@
 .box .main {
     text-align: center;
     position: relative;
-    top: -5px;
-    left: 80px;
+    top: 27px;
+    left: 49px;
 }
 
 .box .title {
     position: absolute;
     top: 20px;
     left: 20px;
-    width: 300px;
     display: flex;
     justify-content: start;
     z-index: 1;
+    line-height: 52px;
 }
 
 .box .title span {
@@ -20,4 +20,8 @@
     margin-top: 3px;
     color: #231815;
     font-size: 20px;
+}
+
+.tips {
+    color: #a0a0a0;
 }

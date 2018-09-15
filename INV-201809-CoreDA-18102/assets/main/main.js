@@ -1,7 +1,7 @@
 $(function() {
     var tips = [
-        'γ 仅指β-内酰胺酶阴性菌株',
-        'α 仅指对青霉素敏感菌株；β 仅指对甲氧西林敏感菌株'
+        'α 仅指对青霉素敏感菌株；β 仅指对甲氧西林敏感菌株',
+        'γ 仅指β-内酰胺酶阴性菌株'
         // '*对甲氧西林耐药的葡萄球菌和肠球菌属对怡万之®（厄他培南）耐药<br>α 仅指对青霉素敏感菌株；β 仅指对甲氧西林敏感菌株'
     ]
 
@@ -49,7 +49,7 @@ $(function() {
         $('.small-box').stop();
         $('.small-box').removeAttr('style');
         $('.small-box img').removeAttr('style');
-        $('.lens').show();
+        $('.lens').stop().css({ 'opacity': 1 }).show();
         $('.microscope').show();
         $('.texts li').removeClass('active').css('opacity', 0);
         $('.tips').html('');

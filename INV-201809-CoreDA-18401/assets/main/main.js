@@ -1,8 +1,8 @@
 $(function() {
     var flag = false;
-    var index = 1;
+    var index = 0;
 
-    s2('.item1');
+    // s2('.item1');
 
     $('.section1').on('click', function() {
         if (flag || index === 1) { return; }
@@ -49,6 +49,7 @@ $(function() {
         $(item).find('.person1').stop().show();
         $(item).find('.person2').stop().hide();
         $(item).find('.person3').stop().hide();
+        $(item).find('.s0').hide();
         $(item).find('.s1').stop().hide();
         $(item).find('.s2').stop().hide();
         $(item).find('.bag').stop().hide();
@@ -56,7 +57,7 @@ $(function() {
 
     function s2(item) {
         flag = true;
-        $(item).find('.s1').fadeIn();
+        $(item).find('.s1').fadeIn(1000);
         $(item).find('.s2').hide();
         
         $(item).find('.bag').fadeIn(1000, function() {

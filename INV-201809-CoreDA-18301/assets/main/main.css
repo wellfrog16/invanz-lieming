@@ -80,6 +80,20 @@
     font-size: 0;
 }
 
+.seal {
+    position: absolute;
+    z-index: 1;
+    bottom: -31px;
+    right: -32px;
+}
+
+.seal img {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
 .right {
     width: 472px;
     height: 335px;

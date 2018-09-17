@@ -243,7 +243,7 @@ h1 span{
     position: fixed;
     top: 55px;
     left: 15px;
-    z-index: 2;
+    z-index: 20;
     margin: 0;
     display: none;
     width: 950px;

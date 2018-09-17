@@ -1,0 +1,43 @@
+body,
+html {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    color: #000;
+    font-size: 12px;
+    width: 100%;
+    height: 100%;
+    font-family:  PingFangSC-Regular, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    /*苹果手持设备的浏览器属性，意思是：点击它，它就会出现一个半透明的灰色背景。*/
+    -webkit-tap-highlight-color: transparent;
+    /*当你触摸并按住触摸目标时候，禁止或显示系统默认菜单。*/
+    -webkit-touch-callout: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+
+.footer{
+    width: 100%;
+    height: 50px;
+}

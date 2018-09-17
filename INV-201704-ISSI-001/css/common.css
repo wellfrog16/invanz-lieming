@@ -1,0 +1,252 @@
+body {
+    background: url("../media/images/thumbnails/background.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+img.dimg {
+    display: block;
+    width: 100%;
+}
+
+.red {
+    color: #ad0054 !important;
+}
+
+.logo,
+.ref {
+    position: absolute;
+    bottom: 46px;
+}
+.ref{
+    display: none;;
+}
+.logo {
+    left: 20px;
+    width: 150px;
+}
+
+.ref {
+    right: 20px;
+    width: 60px;
+}
+
+.content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.list>div{      height:768px;      width:240px;      padding:20px;      background:#fff;      position: absolute;      left:-300px;      top: 0;   }  .list ul li{      margin-bottom:20px;      z-index:0;      width: 200px;      height: 150px;  }  .list img{      width:200px;  }
+.ra {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -48px;
+    margin-left: -48px;
+}
+
+.ra .round {
+    width: 96px;
+    opacity: 0;
+}
+
+.ra .arrow {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    margin-left: -28px;
+    width: 56px;
+    z-index: 9;
+    opacity: 0;
+    transform-origin: 50% 100%;
+    -webkit-transform-origin: 50% 100%;
+}
+
+.arrowmove {
+    animation: arrowmove 1.2s linear 0s infinite both;
+    -webkit-animation: arrowmove 1.2s linear 0s infinite both;
+}
+
+.twinkle {
+    animation: twinkle 3s linear 0s 1 both;
+    -webkit-animation: twinkle 3s linear 0s 1 both;
+}
+
+.appearall {
+    animation: appearall .6s linear 0s 1 both;
+    -webkit-animation: appearall .6s linear 0s 1 both;
+}
+
+.appear {
+    animation: appear .5s linear 0s 1 both;
+    -webkit-animation: appear .5s linear 0s 1 both;
+}
+
+.disappear {
+    animation: disappear .5s linear 0s 1 both;
+    -webkit-animation: disappear .5s linear 0s 1 both;
+}
+
+.appearup {
+    animation: appearup .5s linear 0s 1 both;
+    -webkit-animation: appearup .5s linear 0s 1 both;
+}
+
+.appearleft {
+    animation: appearleft .5s linear 0s 1 both;
+    -webkit-animation: appearleft .5s linear 0s 1 both;
+}
+
+.largen {
+    animation: largen .5s linear 0s 1 both;
+    -webkit-animation: largen .5s linear 0s 1 both;
+}
+
+.lessen {
+    animation: lessen .5s linear 0s 1 both;
+    -webkit-animation: lessen .5s linear 0s 1 both;
+}
+
+.smaller {
+    animation: smaller .5s linear 0s 1 both;
+    -webkit-animation: smaller .5s linear 0s 1 both;
+}
+
+@-webkit-keyframes twinkle {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes arrowmove {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(.8);
+        -webkit-transform: scale(.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+}
+
+@-webkit-keyframes appearall {
+    0% {
+        transform: translate3d(0, 100%, 0);
+        -webkit-transform: translate3d(0, 100%, 0);
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+}
+
+@-webkit-keyframes disappear {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes arrowup {
+    0% {
+        opacity: 1;
+        -webkit-transform: translateY(0px);
+    }
+    50% {
+        opacity: 0;
+        -webkit-transform: translateY(-30px);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateY(0px);
+    }
+}
+
+@-webkit-keyframes appearup {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+        -webkit-transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes appearleft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(0px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(-50px);
+    }
+}
+
+@-webkit-keyframes largen {
+    0% {
+        opacity: 0;
+        transform: scale(0.01);
+        -webkit-transform: scale(0.01);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+}
+
+@-webkit-keyframes lessen {
+    0% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+    100% {
+        transform: scale(0.7);
+        -webkit-transform: scale(0.7);
+    }
+}
+
+@-webkit-keyframes smaller {
+    0% {
+        opacity: 0;
+        transform: scale(5);
+        -webkit-transform: scale(5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+}

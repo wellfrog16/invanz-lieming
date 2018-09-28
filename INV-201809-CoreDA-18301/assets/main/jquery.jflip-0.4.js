@@ -154,7 +154,23 @@
           index += sideLeft?-1:1;
           if(index<0) index = images.length-1;
           if(index==images.length) index = 0;
-          el.trigger("flip.jflip",[index,images.length]);
+          if (index==0) { 
+            window.clearInterval(animationTimer);
+          } else {
+            el.trigger("flip.jflip",[index,images.length]);
+          }
+          if(index==1) {
+            setTimeout(function() {
+              flipping = true;
+              startDate = new Date().getTime();
+              window.clearInterval(animationTimer);
+              baseFlipX = 0;
+              baseFlipY = 0;
+              mX = 0;
+              mY = 0;
+              draw();
+            }, 750)
+          }
         }
         return false;
       }).mousedown(function(){

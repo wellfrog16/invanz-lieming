@@ -100,6 +100,20 @@
     animation-fill-mode: forwards;
 }
 
+.hand {
+    position: absolute;
+    z-index: 1;
+    bottom: -6px;
+    left: -4px;
+}
+
+.hand img {
+    width: 70px;
+    transform: scale(1.5);
+    animation: kf-size 500ms linear infinite;
+    animation-fill-mode: forwards;
+}
+
 .right {
     width: 472px;
     height: 335px;

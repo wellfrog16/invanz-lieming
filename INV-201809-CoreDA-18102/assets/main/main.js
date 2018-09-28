@@ -39,7 +39,7 @@ $(function() {
                 
                 $(self).find('.lens').fadeOut();
                 $('.microscope').fadeOut();
-            }, 1000);
+            }, 500);
         });
     });
 

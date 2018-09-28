@@ -26,6 +26,10 @@ $(function() {
     setTimeout(function() {
         $('.line1').animate({ 'top': '140px' }, 800);
         $('.line2').animate({ 'top': '180px' }, 800);
+
+        $('.hand').animate({opacity: 0}, 1200, function() {
+            $(this).hide();
+        })
     }, 1000);
 
     //

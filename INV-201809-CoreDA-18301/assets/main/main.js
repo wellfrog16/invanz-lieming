@@ -41,15 +41,15 @@ $(function() {
         if (index === 3) {
             $('.line1').stop().animate({ 'top': '140px' }, 800);
             $('.line2').stop().animate({ 'top': '80px' }, 800);
-            $('.seal1').addClass('active');
-            $('.seal2').removeClass('active');
+            $('.seal2').addClass('active');
+            $('.seal1').removeClass('active');
         }
 
         if (index === 2) {
             $('.line1').stop().animate({ 'top': '80px' }, 800);
             $('.line2').stop().animate({ 'top': '120px' }, 800);
-            $('.seal1').removeClass('active');
-            $('.seal2').addClass('active');
+            $('.seal2').removeClass('active');
+            $('.seal1').addClass('active');
         }
 
         if (index === 1) {

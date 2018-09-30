@@ -14,6 +14,40 @@
     text-align: center;
 }
 
+/* .hand {
+    position: absolute;
+    z-index: 10;
+}
+
+.hand div {
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    position: absolute;
+    border-radius: 100px;
+    animation: kf-size 800ms linear infinite;
+}
+
+.hand1 {
+    top: 192px;
+    left: 119px;
+}
+
+.hand2 {
+    top: 101px;
+    left: 323px;
+}
+
+.hand3 {
+    top: 100px;
+    left: 559px;
+}
+
+.hand4 {
+    top: 166px;
+    left: 779px;
+} */
+
 .section {
     display: flex;
     height: 430px;
@@ -21,6 +55,11 @@
     left: 100px;
     position: absolute;
     z-index: 10;
+    -webkit-tap-highlight-color:transparent;
+}
+
+.section div {
+    -webkit-tap-highlight-color:transparent;
 }
 
 .section1 {
@@ -87,6 +126,11 @@
     z-index: 3;
 }
 
+.bag {
+    transform: scale(0.5);
+    animation: kf-size 800ms linear infinite;
+}
+
 /* ****************** */
 .item1 {
 }
@@ -126,9 +170,8 @@
 }
 
 .item1 .bag {
-    top: 226px;
-    left: 144px;
-    display: none;
+    top: 191px;
+    left: 105px;
 }
 
 .item2 {
@@ -159,9 +202,8 @@
 }
 
 .item2 .bag {
-    top: 136px;
-    left: 315px;
-    display: none;
+    top: 95px;
+    left: 302px;
 }
 
 .item3 {
@@ -191,9 +233,8 @@
 }
 
 .item3 .bag {
-    top: 128px;
-    left: 525px;
-    display: none;
+    top: 90px;
+    left: 530px;
 }
 
 .item4 {
@@ -217,7 +258,18 @@
 }
 
 .item4 .bag {
-    top: 178px;
-    left: 725px;
-    display: none;
+    top: 154px;
+    left: 751px;
+}
+
+@keyframes kf-size {
+    form {
+        opacity: 0.5;
+        transform: scale(0.1)
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(1.1)
+    }
 }
